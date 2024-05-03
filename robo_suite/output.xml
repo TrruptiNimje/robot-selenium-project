@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on darwin)" generated="2024-05-03T15:06:04.315205" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="/Users/tnimje/PycharmProjects/pythonProject/robot_selenium/robo_suite/test1.robot">
+<test id="s1-t1" name="Validate unsuccessful login" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:06:04.400539" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-03T15:06:04.400417" elapsed="1.783046"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:06:06.184365" level="INFO">Typing text 'testdemo1' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>testdemo1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:06:06.184165" elapsed="0.085269"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:06:06.269698" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2024-05-03T15:06:06.293696" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>password</arg>
+<arg>test1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:06:06.269567" elapsed="0.053875"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:06:06.323707" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:06:06.323572" elapsed="0.037435"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:06:06.183932" elapsed="0.177163"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:06:04.399923" elapsed="1.961305"/>
+</test>
+<doc>To validate the login form</doc>
+<status status="PASS" start="2024-05-03T15:06:04.315924" elapsed="2.045591"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

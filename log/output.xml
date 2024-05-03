@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-05-03T15:12:21.260596" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="/Users/tnimje/PycharmProjects/pythonProject/robot_selenium/robo_suite/test1.robot">
+<test id="s1-t1" name="Validate unsuccessful login" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:12:21.367563" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-03T15:12:21.367338" elapsed="1.930316"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:12:23.298956" level="INFO">Typing text 'testdemo1' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>testdemo1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:12:23.298607" elapsed="0.106050"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:12:23.405043" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2024-05-03T15:12:23.425125" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>password</arg>
+<arg>test1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:12:23.404850" elapsed="0.049937"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:12:23.455185" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T15:12:23.454995" elapsed="0.040418"/>
+</kw>
+<status status="PASS" start="2024-05-03T15:12:23.298269" elapsed="0.197296"/>
+</kw>
+<kw name="Wait until it checks and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-03T15:12:29.040590" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-03T15:12:29.040793" level="FAIL">Element 'Incorrect username/password.' not visible after 5 seconds.</msg>
+<arg>Incorrect username/password.</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-03T15:12:23.495935" elapsed="5.548816">Element 'Incorrect username/password.' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2024-05-03T15:12:23.495711" elapsed="5.549232">Element 'Incorrect username/password.' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2024-05-03T15:12:21.366752" elapsed="7.678328">Element 'Incorrect username/password.' not visible after 5 seconds.</status>
+</test>
+<doc>To validate the login form</doc>
+<status status="FAIL" start="2024-05-03T15:12:21.261657" elapsed="7.783847"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
